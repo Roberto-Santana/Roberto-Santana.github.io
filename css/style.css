@@ -1,0 +1,349 @@
+/* ================================ */
+/* STYLES DE LA BARRA DEL LOGO */
+/* ================================ */
+
+.navbarlogo {
+    border: none;
+    background-color: #b40000; /* Cambia el color de fondo según tu preferencia */
+    color: white; /* Cambia el color del texto según tu preferencia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+header .navbar {
+    border: none !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el logo de la empresa */
+.logo img {
+    max-width: 200px; /* Ajusta el ancho máximo del logo */
+    height: auto;
+}
+
+.redes-sociales_navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los iconos de las redes sociales */
+.redes-sociales_navbar a {
+    margin-left: 15px; /* Espacio entre los iconos, ajusta según sea necesario */
+}
+
+.redes-sociales_navbar img {
+    width: 30px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}
+
+.separator {
+    height: 35px; /* Altura del separador, ajusta según sea necesario */
+    width: 2px; /* Ancho del separador */
+    background-color: white; /* Color del separador */
+    margin: 0 20px; /* Espacio alrededor del separador */
+    
+}
+
+
+/* ================================ */
+/* STYLES DE LA BARRA DE NAVEGACIÓN */
+/* ================================ */
+
+/* Estilos para la barra de navegación */
+.navbarnavegacion {
+    background-color: #ecdd00; /* Cambia el color de fondo según tu preferencia */
+    color: rgb(0, 0, 0); /* Cambia el color del texto según tu preferencia */
+    padding: 13px 0px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para la lista de opciones */
+.navbarnavegacion ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Establece la lista como una fila flex */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para cada elemento de la lista */
+.navbarnavegacion li {
+    margin-right: 80px; /* Espacio entre cada opción de navegación */
+}
+
+/* Estilos para el enlace de navegación */
+.navbarnavegacion a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: rgb(0, 0, 0); /* Color del texto de los enlaces */
+}
+
+/* Cambiar el color del enlace al pasar el mouse por encima */
+.navbarnavegacion a:hover {
+    color: #303030; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+/* ================================ */
+/* STYLES DE LA BARRA DE NOTICIAS P */
+/* ================================ */
+
+
+
+
+
+
+
+/* ================================ */
+/* STYLES DE LOS ULTIMOS 5 PARTIDOS */
+/* ================================ */
+
+.ultimos-partidos {
+    display: inline;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partido {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-inline-start: 70px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipos img {
+    width: 80px; /* Ajusta el tamaño de los logos según sea necesario */
+    height: auto;
+    margin-bottom: 5px;
+    
+}
+
+.resultado span {
+    font-weight: bold;
+    font-family: Bahnschrift;
+    font-size: 25px;
+}
+
+.nombre-torneo {
+    color: #da0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+}
+
+
+
+/* ================================ */
+/* STYLES DE PUBLICIDAD DE PARTNERS */
+/* ================================ */
+
+.publicidad_partners {
+    display: flex;
+    justify-content: space-between; /* Alinea las imágenes alrededor del contenedor en escritorio */
+    overflow: hidden; /* Evitar que las imágenes se desborden en pantallas grandes */
+}
+
+.publicidad_partners_escritorio {
+    display: flex;
+    justify-content: center; /* Alinea las imágenes alrededor del contenedor en escritorio */
+    overflow: hidden; /* Evitar que las imágenes se desborden en pantallas grandes */
+}
+
+.publicidad_partners .publicidad {
+    width: 30%; /* Establece el ancho deseado para las imágenes en escritorio */
+}
+
+.publicidad {
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+    margin: 20px;
+}
+
+.publicidad_escritorio {
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+    margin: 20px;
+}
+
+.publicidad img {
+    width: 400px; /* Ajusta el tamaño inicial de las imágenes */
+    height: auto;
+}
+
+.publicidad:hover {
+    transform: scale(0.9); /* Agranda la imagen al pasar el mouse */
+}
+
+.publicidad_escritorio:hover {
+    transform: scale(0.9); /* Agranda la imagen al pasar el mouse */
+}
+
+
+
+
+/* ================================ */
+/* STYLES DE LA BARRA DE NOTICIAS D */
+/* ================================ */
+
+.contenedor-noticiasd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ajusta el espacio entre las noticias */
+}
+
+.noticiad {
+    width: calc(20% - 10px); /* Ancho de cada noticia con margen entre ellas */
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.noticiad img {
+    width: 100%; /* La imagen ocupa el ancho completo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.noticiad img:hover {
+    transform: scale(1.05);
+}
+
+.categoriad {
+    font-weight: bold;
+    color: #da0000;
+    margin-bottom: 5px;
+    font-family: Bahnschrift;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.titulo-noticia-d {
+    margin: 0;
+    font-size: 16px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton-todasnoticias {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    background-color: #da0000;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton-todasnoticias:hover {
+    background-color: #b90000; /* Cambio de color al pasar el mouse */
+}
+
+.publicidad2 {
+    margin-top: 20px;
+    display: block;
+    margin: 30px auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+/* ================================ */
+/*  STYLES DE LA BARRA DE GALERÍA D */
+/* ================================ */
+
+.contenedor-galeriad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ajusta el espacio entre las noticias */
+}
+
+.galeriad {
+    width: calc(20% - 10px); /* Ancho de cada noticia con margen entre ellas */
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.galeriad img {
+    width: 100%; /* La imagen ocupa el ancho completo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.galeriad img:hover {
+    transform: scale(1.05);
+}
+
+.titulo-galeria-d {
+    margin: 0;
+    font-size: 16px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ================================ */
+/*  STYLES DEL FOOTER               */
+/* ================================ */
+
+.footer-rojo {
+    background-color: #da0000; /* Fondo rojo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Ajusta el espaciado interno */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contenedor-auspiciadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-auspiciadores img {
+    width: 100px; /* Ajusta el tamaño de los logos de auspiciadores */
+    height: auto;
+    margin: 0 10px; /* Ajusta el espacio entre los logos */
+}
+
+.barraamarillafooter {
+    background-color: #ecdd00;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* ================================ */
+/*  STYLES DEL SISTEMA DE PAGINACIO */
+/* ================================ */
+
+
+
+
+
+/* ================================ */
+/*  ESTILOS RESPONSIVE              */
+/* ================================ */
+

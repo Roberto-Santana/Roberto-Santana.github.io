@@ -1,0 +1,169 @@
+.fotoequipo {
+    width: auto; /* Ancho deseado */
+    height: 600px; /* Alto deseado */
+    overflow: hidden; /* Oculta el contenido que excede los límites del contenedor */
+}
+
+.fotoequipo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala la imagen para llenar el contenedor manteniendo su relación de aspecto */
+}
+
+.barra-opcionesequipo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #da0000; /* Color de fondo de la barra */
+    padding: 10px;
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.opcionequipo {
+    flex: 1; /* Distribuir el espacio disponible de manera equitativa */
+    text-align: center; /* Centrar el texto */
+    cursor: pointer;
+    transition: border-bottom-color 0.3s; /* Transición del color de la línea */
+}
+
+.opcionequipo:hover {
+    border-bottom: 3px solid #ecdd00; /* Línea debajo de la opción al pasar el mouse */
+}
+
+.opcionequipo + .opcionequipo {
+    border-left: 1px solid #ccc; /* Línea separadora entre las opciones */
+}
+
+.separador2 {
+    width: 1px;
+    height: 20px;
+    background-color: #ccc; /* Color de la línea separadora */
+}
+
+/* JUGADORES */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre cada jugador */
+}
+
+.jugador {
+    position: relative;
+    max-width: 300px; /* Ancho máximo de cada jugador */
+    margin-left: 100px;
+}
+
+.jugador img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    color: #da0000;
+    font-family: Bahnschrift;
+    font-size: 100px;
+}
+
+.texto p {
+    margin: 0;
+    font-size: 50px;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+
+
+.bannerjugador {
+    position: relative;
+    width: 100%; /* Ancho deseado */
+    overflow: hidden; /* Oculta el contenido que excede los límites del contenedor */
+}
+
+.bannerjugador img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bannerjugador::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Altura del degradado oscuro */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); /* Degradado oscuro */
+}
+
+
+
+
+.barra-informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #da0000; /* Color de fondo de la barra */
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bandera img {
+    max-height: 100%;
+}
+
+.nombre-apellido,
+.fecha-nacimiento,
+.altura {
+    text-align: center;
+    margin-left: 120px;
+}
+
+.bloque {
+    margin: 20px; /* Establece los márgenes */
+    padding: 60px; /* Añade un relleno dentro del bloque */
+    background-color: #fcfcfc;
+    border-radius: 5%;
+    color: #555555;
+    font-family: Bahnschrift;
+    font-size: 23px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px; /* Ajusta el ancho máximo del contenedor según tus necesidades */
+        margin: 0 auto; /* Centra el contenedor en la página */
+    }
+    
+    .jugador {
+        flex: 1 0 48%; /* Dos jugadores por fila con un pequeño espacio entre ellos */
+        margin-bottom: 10px; /* Ajusta el margen inferior para que haya espacio entre filas */
+        margin-left: 20px;
+    }
+    
+    .jugador img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    .texto {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 12px; /* Ajusta el tamaño del texto según tus preferencias */
+    }
+}
